@@ -4,17 +4,14 @@ smoothScroll.init({
 
 $(function() {
 	var $window = $(window);
-	var $headerImage = $('#header-image');
-	var $programBackground = $('#program-background');
-	var scrollTop;
-	var touchDevice = false;
-	var programOffset = 0;
-	$window.on('touchstart', function() {
-		touchDevice = true;
-	});
 
-	$window.scroll(function() {
-		if(!touchDevice) {
+	// Parallax scrolling (disabled on touch devices)
+	if(!Modernizr.touch) {
+		var $headerImage = $('#header-image');
+		var $programBackground = $('#program-background');
+		var scrollTop;
+		var programOffset = 0;
+		$window.scroll(function() {
 			scrollTop = $window.scrollTop();
 			$headerImage.css({
 				"-webkit-transform": "translate3d(0," + (scrollTop/2) + "px,0)",
@@ -33,25 +30,15 @@ $(function() {
 				"-o-transform": "translate3d(0," + programOffset + "px,0)",
 				"transform": "translate3d(0," + programOffset + "px,0)"
 			});
-		}
-	});
-
-	/*var map = new GMaps({
-	  div: '#gmaps',
-	  lat: -12.043333,
-	  lng: -77.028333
-	});
-
-	map.addMarker({
-		lat: -12.043333,
-		lng: -77.028333,
-		title: 'Lima'
-	});*/
+		});
+	}
 	
+	// Map
 	var $map = $('#gmaps');
 	var $mapImg = $('<img/>');
+	var mapUrl;
 	function updateMap() {
-		var mapUrl = GMaps.staticMapURL({
+		mapUrl = GMaps.staticMapURL({
 			size: [$map.width(), $map.height()],
 			lat: 61.5009506,
 			lng: 23.76100139999994,
@@ -59,7 +46,7 @@ $(function() {
 				{lat: 61.5009506, lng: 23.76100139999994}
 			]
 		});
-		$mapImg.attr('src', mapUrl)
+		$mapImg.attr('src', mapUrl);
 	}
 	updateMap();
 	$map.html($mapImg);
