@@ -340,6 +340,16 @@ p {
 	.program-row .time {
 		width: 15%;
 	}
+
+	.program-row .speaker {
+		width: 70%;
+	}
+
+	.program-row .topic {
+		display: block;
+		padding-top: 0.25em;
+		width: 100%;
+	}
 }
 
 @media (max-width: 600px) {
