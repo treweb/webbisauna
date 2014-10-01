@@ -210,11 +210,26 @@ p {
 }
 
 #program {
-	background: #bb9a61 url('../img/wood.jpg') repeat center top;
 	box-shadow: inset 0px 2px 0px rgba(0,0,0,0.1);
 	overflow: hidden;
 	padding-bottom: 2em;
 	text-shadow: 0px 1px rgba(255,255,255,0.25);
+	position: relative;
+}
+
+#program-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400%;
+	background: #bb9a61 url('../img/wood.jpg') repeat center top;
+	z-index: -1;
+}
+
+#program .wrap {
+	position: relative;
+	z-index: 0;
 }
 
 #program h2 {
@@ -224,6 +239,34 @@ p {
 
 #program p {
 	text-align: center;
+}
+
+.program-row {
+	padding: 0.5em 2%;
+	margin-bottom: 4px;
+	background: #fff;
+	box-shadow: 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+.program-row .time {
+	display: inline-block;
+	width: 10%;
+	font-family: encode_sans_widesemibold;
+	color: #836f4e;
+	vertical-align: top;
+}
+
+.program-row .speaker {
+	display: inline-block;
+	color: #c64700;
+	width: 25%;
+	vertical-align: top;
+}
+
+.program-row .topic {
+	display: inline-block;
+	width: 55%;
+	vertical-align: top;
 }
 
 #venue {
@@ -293,6 +336,10 @@ p {
 	#subheader {
 		font-size: 1.4em;
 	}
+
+	.program-row .time {
+		width: 15%;
+	}
 }
 
 @media (max-width: 600px) {
@@ -310,6 +357,10 @@ p {
 
 	#header {
 		font-size: 0.6em;
+	}
+
+	.program-row .time {
+		width: 20%;
 	}
 }
 

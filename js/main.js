@@ -5,8 +5,10 @@ smoothScroll.init({
 $(function() {
 	var $window = $(window);
 	var $headerImage = $('#header-image');
+	var $programBackground = $('#program-background');
 	var scrollTop;
 	var touchDevice = false;
+	var programOffset = 0;
 	$window.on('touchstart', function() {
 		touchDevice = true;
 	});
@@ -20,6 +22,16 @@ $(function() {
 				"-ms-transform": "translate3d(0," + (scrollTop/2) + "px,0)",
 				"-o-transform": "translate3d(0," + (scrollTop/2) + "px,0)",
 				"transform": "translate3d(0," + (scrollTop/2) + "px,0)"
+			});
+
+			programOffset = (scrollTop - $programBackground.offset().top) / 2;
+
+			$programBackground.css({
+				"-webkit-transform": "translate3d(0," + programOffset + "px,0)",
+				"-moz-transform": "translate3d(0," + programOffset + "px,0)",
+				"-ms-transform": "translate3d(0," + programOffset + "px,0)",
+				"-o-transform": "translate3d(0," + programOffset + "px,0)",
+				"transform": "translate3d(0," + programOffset + "px,0)"
 			});
 		}
 	});
@@ -51,5 +63,5 @@ $(function() {
 	}
 	updateMap();
 	$map.html($mapImg);
-	$window.resize(updateMap);
+	$window.smartresize(updateMap);
 });
