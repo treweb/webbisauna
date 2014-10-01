@@ -104,7 +104,7 @@ p {
 	z-index: -1;
 	height: 120%;
 	width: 100%;
-	background: #000 url('../img/header-bg.jpg') no-repeat center top;
+	background: #000 url('../img/header-bg.jpg') no-repeat center center;
 	background-size: cover;
 }
 
