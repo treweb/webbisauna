@@ -235,6 +235,13 @@ p {
 
 #venue .map-container {
 	margin: 2em 0;
+	width: 100%;
+	height: 15em;
+	overflow: hidden;
+}
+
+#venue .map-container img {
+	width: 100%;
 }
 
 #faq {
