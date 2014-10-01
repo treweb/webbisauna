@@ -109,8 +109,6 @@ p {
 }
 
 #header {
-	background-size: cover;
-	background-attachment: fixed;
 	overflow: hidden;
 	color: #fff;
 	margin-top: 3em;
