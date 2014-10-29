@@ -331,6 +331,7 @@ p {
 	float: left;
 	width: 16%;
 	margin: 2%;
+	position: relative;
 	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
@@ -351,6 +352,12 @@ p {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+
+#sponsors a[href*="futurice"] { top: -3px; background-image: url('../img/sponsors/futurice.png'); }
+#sponsors a[href*="leonidas"] { background-image: url('../img/sponsors/leonidas.png'); }
+#sponsors a[href*="vincit"] { background-image: url('../img/sponsors/vincit.png'); }
+#sponsors a[href*="alupark"] { top: 2px; background-image: url('../img/sponsors/alupark.png'); }
+#sponsors a[href*="bearmetal"] { background-image: url('../img/sponsors/bearmetal.png'); }
 
 #footer {
 	background: #303030;
