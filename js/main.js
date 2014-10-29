@@ -14,9 +14,9 @@ $(function() {
 	// Parallax scrolling (disabled on touch devices)
 	if(!Modernizr.touch) {
 		var $headerImage = $('#header-image');
-		var $programBackground = $('#program-background');
+		//var $programBackground = $('#program-background');
 		var scrollTop;
-		var programOffset = 0;
+		//var programOffset = 0;
 		$window.scroll(function() {
 			scrollTop = $window.scrollTop();
 			$headerImage.css({
@@ -26,7 +26,7 @@ $(function() {
 				"-o-transform": "translate3d(0," + (scrollTop/2) + "px,0)",
 				"transform": "translate3d(0," + (scrollTop/2) + "px,0)"
 			});
-
+			/*
 			programOffset = (scrollTop - $programBackground.offset().top) / 2;
 
 			$programBackground.css({
@@ -35,7 +35,7 @@ $(function() {
 				"-ms-transform": "translate3d(0," + programOffset + "px,0)",
 				"-o-transform": "translate3d(0," + programOffset + "px,0)",
 				"transform": "translate3d(0," + programOffset + "px,0)"
-			});
+			});*/
 		});
 	}
 	
