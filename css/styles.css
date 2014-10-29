@@ -321,6 +321,37 @@ p {
 	margin: 0 0 2.5em 0;
 }
 
+#sponsors {
+	overflow: hidden;
+	background: #f0f0f0;
+	padding: 2em 0;
+}
+
+#sponsors a {
+	float: left;
+	width: 16%;
+	margin: 2%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	height: 80px;
+	background: transparent center center no-repeat;
+	background-size: contain;
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+#sponsors a:hover {
+	opacity: 0.5;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
 #footer {
 	background: #303030;
 	color: #848484;
@@ -407,6 +438,11 @@ p {
 
 	.program-row .time {
 		width: 20%;
+	}
+
+	#sponsors a {
+		width: 40%;
+		margin: 5%;
 	}
 }
 
