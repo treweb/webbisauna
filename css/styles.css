@@ -287,6 +287,14 @@ p {
 	color: #fff;
 }
 
+#venue a {
+	color: #DDBD84;
+}
+
+#venue a:hover {
+	text-decoration: underline;
+}
+
 #venue .map-container {
 	margin: 2em 0;
 	width: 100%;
