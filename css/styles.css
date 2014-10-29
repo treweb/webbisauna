@@ -333,6 +333,14 @@ body.loaded #header h2 {
 	color: #fff;
 }
 
+#venue a {
+	color: #DDBD84;
+}
+
+#venue a:hover {
+	text-decoration: underline;
+}
+
 #venue .map-container {
 	margin: 2em 0;
 	width: 100%;
@@ -377,6 +385,7 @@ body.loaded #header h2 {
 	float: left;
 	width: 16%;
 	margin: 2%;
+	position: relative;
 	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
@@ -397,6 +406,12 @@ body.loaded #header h2 {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+
+#sponsors a[href*="futurice"] { top: -3px; background-image: url('../img/sponsors/futurice.png'); }
+#sponsors a[href*="leonidas"] { background-image: url('../img/sponsors/leonidas.png'); }
+#sponsors a[href*="vincit"] { background-image: url('../img/sponsors/vincit.png'); }
+#sponsors a[href*="alupark"] { top: 2px; background-image: url('../img/sponsors/alupark.png'); }
+#sponsors a[href*="bearmetal"] { background-image: url('../img/sponsors/bearmetal.png'); }
 
 #footer {
 	background: #303030;
@@ -489,6 +504,10 @@ body.loaded #header h2 {
 	#sponsors a {
 		width: 40%;
 		margin: 5%;
+	}
+
+	#sponsors a[href*="futurice"] {
+		top: 0;
 	}
 }
 
