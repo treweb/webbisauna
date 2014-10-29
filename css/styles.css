@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-	font-family: encode_sans_widelight;
+	font-family: encode_sans_widelight, sans-serif;
 	color: #303030;
 }
 
@@ -28,7 +28,7 @@ p {
 }
 
 .section-header {
-	font-family: nexa_rust_sansblack;
+	font-family: nexa_rust_sansblack, sans-serif;
 	margin-top: 1.5em;
 }
 
@@ -55,7 +55,7 @@ p {
 	padding: 0.5em 1em 0.6em 1em;
 	border: 1px solid #fff;
 	color: #fff;
-	font-family: encode_sans_widelight;
+	font-family: encode_sans_widelight, sans-serif;
 	text-transform: uppercase;
 	font-size: 0.9em;
 	background: transparent;
@@ -77,7 +77,7 @@ p {
 	width: 100%;
 	background: #fff;
 	height: 3em;
-	font-family: encode_sans_widesemibold;
+	font-family: encode_sans_widesemibold, sans-serif;
 	line-height: 3em;
 	text-align: right;
 	text-transform: uppercase;
@@ -91,7 +91,7 @@ p {
 }
 
 #navi a.navi-home-link {
-	font-family: nexa_rust_sansblack;
+	font-family: nexa_rust_sansblack, sans-serif;
 	float: left;
 	margin-left: 0;
 	font-size: 1.1em;
@@ -156,7 +156,7 @@ p {
 	display: inline-block;
 	background: #fff;
 	color: #303030;
-	font-family: encode_sans_widesemibold;
+	font-family: encode_sans_widesemibold, sans-serif;
 	border-radius: 0.25em;
 	overflow: hidden;
 	text-shadow: none;
@@ -251,7 +251,7 @@ p {
 .program-row .time {
 	display: inline-block;
 	width: 10%;
-	font-family: encode_sans_widesemibold;
+	font-family: encode_sans_widesemibold, sans-serif;
 	color: #836f4e;
 	vertical-align: top;
 }
@@ -291,6 +291,23 @@ p {
 	padding: 2em 0;
 	background: #fff;
 	overflow: hidden;
+}
+
+#faq dl {
+	line-height: 2em;
+}
+
+#faq dt {
+	padding: 0;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	font-family: encode_sans_widesemibold, sans-serif;
+}
+
+#faq dd {
+	font-size: 1em;
+	padding: 0;
+	margin: 0 0 2.5em 0;
 }
 
 #footer {
