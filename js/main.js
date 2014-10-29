@@ -7,10 +7,16 @@ $(function() {
 	var $body = $('body')
 
 	var $codeOfConduct = $('#code-of-conduct')
-	$('.show-code-of-conduct').click(function(e) {
-		e.preventDefault();
+
+	var showConduct = function() {
 		$codeOfConduct.addClass('visible');
 		$body.addClass('modal-visible');
+		window.location.hash = 'conduct';
+	}
+
+	$('.show-code-of-conduct').click(function(e) {
+		e.preventDefault();
+		showConduct();
 		return false;
 	});
 
@@ -18,6 +24,10 @@ $(function() {
 		$codeOfConduct.removeClass('visible');
 		$body.removeClass('modal-visible');
 	})
+
+	if(window.location.hash == '#conduct') {
+		showConduct();
+	}
 
 	var headerImg = new Image();
 	$(headerImg).load(function() {

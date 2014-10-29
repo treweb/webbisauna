@@ -493,8 +493,8 @@ body.loaded #header h2 {
 .modal-box {
 	position: absolute;
 	top: 5%;
-	left: 5%;
-	width: 90%;
+	left: 15%;
+	width: 70%;
 	height: 90%;
 	background: #fff;
 	border-radius: 0.5em;
@@ -632,6 +632,13 @@ body.loaded #header h2 {
 
 	#sponsors a[href*="futurice"] {
 		top: 0;
+	}
+
+	.modal-box {
+		top: 5%;
+		left: 5%;
+		width: 90%;
+		height: 90%;
 	}
 }
 
