@@ -326,6 +326,20 @@ body.loaded #header h2 {
 	vertical-align: top;
 }
 
+#register-speaker {
+	padding: 1em;
+	margin-top: 1em;
+	background: rgba(255,255,255,0.4);
+}
+
+#register-speaker h2 {
+	margin-top: 0;
+}
+
+#register-speaker .topic {
+	width: 100%;
+}
+
 #venue {
 	background: #763915 url('../img/venue-bg.jpg') no-repeat 15% -5px;
 	overflow: hidden;
