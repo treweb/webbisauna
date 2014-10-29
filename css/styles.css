@@ -13,6 +13,10 @@ body {
 a {
 	color: #c64700;
 	text-decoration: none;
+	-webkit-transition: color 200ms ease-in-out;
+	-moz-transition: color 200ms ease-in-out;
+	-ms-transition: color 200ms ease-in-out;
+	transition: color 200ms ease-in-out;
 }
 
 a:hover {
@@ -117,6 +121,15 @@ p {
 	width: 100%;
 	background: #000 url('../img/header-bg.jpg') no-repeat center center;
 	background-size: cover;
+	opacity: 0;
+	-webkit-transition: opacity 1000ms ease-in-out;
+	-moz-transition: opacity 1000ms ease-in-out;
+	-ms-transition: opacity 1000ms ease-in-out;
+	transition: opacity 1000ms ease-in-out;
+}
+
+body.loaded #header-image {
+	opacity: 1;
 }
 
 #header {
@@ -125,6 +138,8 @@ p {
 	margin-top: 3em;
 	text-shadow: 0px 0.1em 0px rgba(0,0,0,0.25);
 	position: relative;
+	background: #000;
+	z-index: 0;
 }
 
 #header h1 {
@@ -136,6 +151,21 @@ p {
 	font-family: nexa_rust_sansblack;
 	font-weight: normal;
 	letter-spacing: 0.1em;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transform: translate3d(-2%,0,0);
+	-moz-transform: translate3d(-2%,0,0);
+	-ms-transform: translate3d(-2%,0,0);
+	transform: translate3d(-2%,0,0);
+	transition: all 500ms ease-out;
+}
+
+body.loaded #header h1 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
 #header h2 {
@@ -146,6 +176,21 @@ p {
 	font-size: 1.5em;
 	font-weight: normal;
 	letter-spacing: 0.05em;
+	z-index: 2;
+	opacity: 0;
+	-webkit-transform: translate3d(2%,0,0);
+	-moz-transform: translate3d(2%,0,0);
+	-ms-transform: translate3d(2%,0,0);
+	transform: translate3d(2%,0,0);
+	transition: all 500ms ease-out;
+}
+
+body.loaded #header h2 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
 #header .dim {
@@ -155,6 +200,7 @@ p {
 #subheader {
 	background: rgba(0,0,0,0.25);
 	overflow: hidden;
+	z-index: 1;
 }
 
 #date-place {

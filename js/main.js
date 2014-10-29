@@ -5,6 +5,12 @@ smoothScroll.init({
 $(function() {
 	var $window = $(window);
 
+	var headerImg = new Image();
+	$(headerImg).load(function() {
+		$('body').addClass('loaded');
+	});
+	headerImg.src = "img/header-bg.jpg";
+
 	// Parallax scrolling (disabled on touch devices)
 	if(!Modernizr.touch) {
 		var $headerImage = $('#header-image');
