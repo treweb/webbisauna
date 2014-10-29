@@ -8,6 +8,10 @@ body {
 	color: #303030;
 }
 
+body.modal-visible {
+	overflow: hidden;
+}
+
 /* Typography */
 
 a {
@@ -17,6 +21,11 @@ a {
 	-moz-transition: color 200ms ease-in-out;
 	-ms-transition: color 200ms ease-in-out;
 	transition: color 200ms ease-in-out;
+}
+
+strong {
+	font-weight: normal;
+	font-family: encode_sans_widesemibold, sans-serif;
 }
 
 a:hover {
@@ -448,6 +457,103 @@ body.loaded #header h2 {
 
 #footer .treweb-logo {
 	width: 164px;
+}
+
+.modal {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.modal.visible {
+	top: 0;
+}
+
+.modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	-webkit-transition: opacity 500ms ease-in-out;
+	-moz-transition: opacity 500ms ease-in-out;
+	-ms-transition: opacity 500ms ease-in-out;
+	transition: opacity 500ms ease-in-out;
+	opacity: 0;
+}
+
+.modal.visible .modal-overlay {
+	opacity: 1;
+}
+
+.modal-box {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background: #fff;
+	border-radius: 0.5em;
+	opacity: 0;
+	-webkit-transform: scale(0.7) translate3d(0,0,0);
+	-moz-transform: scale(0.7) translate3d(0,0,0);
+	-ms-transform: scale(0.7) translate3d(0,0,0);
+	transform: scale(0.7) translate3d(0,0,0);
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.modal-scroller {
+	overflow-y: auto;
+	height: 100%;
+}
+
+.modal-visible .modal-box {
+	opacity: 1;
+	-webkit-transform: scale(1) translate3d(0,0,0);
+	-moz-transform: scale(1) translate3d(0,0,0);
+	-ms-transform: scale(1) translate3d(0,0,0);
+	transform: scale(1) translate3d(0,0,0);
+}
+
+.modal-content {
+	padding: 2em;
+}
+
+.modal-close-icon {
+	position: absolute;
+	top: 1.5em;
+	right: 1.5em;
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: transparent url('../img/close-icon.png') no-repeat center center;
+	background-size: contain;
+	opacity: 0.5;
+	-webkit-transition: opacity 200ms ease-in-out;
+	-moz-transition: opacity 200ms ease-in-out;
+	-ms-transition: opacity 200ms ease-in-out;
+	transition: opacity 200ms ease-in-out;
+}
+
+.modal-close-icon:hover {
+	opacity: 1;
+}
+
+.modal h2 {
+	font-family: nexa_rust_sansblack, sans-serif;
+	margin-top: 0.5em;
+	margin-right: 100px;
+}
+
+.modal h3 {
+	font-family: encode_sans_widesemibold, sans-serif;
 }
 
 @media (max-width: 800px) {

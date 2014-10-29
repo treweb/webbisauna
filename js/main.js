@@ -4,10 +4,24 @@ smoothScroll.init({
 
 $(function() {
 	var $window = $(window);
+	var $body = $('body')
+
+	var $codeOfConduct = $('#code-of-conduct')
+	$('.show-code-of-conduct').click(function(e) {
+		e.preventDefault();
+		$codeOfConduct.addClass('visible');
+		$body.addClass('modal-visible');
+		return false;
+	});
+
+	$codeOfConduct.find('.modal-overlay, .modal-close-icon').click(function() {
+		$codeOfConduct.removeClass('visible');
+		$body.removeClass('modal-visible');
+	})
 
 	var headerImg = new Image();
 	$(headerImg).load(function() {
-		$('body').addClass('loaded');
+		$body.addClass('loaded');
 	});
 	headerImg.src = "img/header-bg.jpg";
 
