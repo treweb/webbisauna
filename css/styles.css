@@ -310,6 +310,24 @@ p {
 	margin: 0 0 2.5em 0;
 }
 
+#sponsors {
+	overflow: hidden;
+	background: #f0f0f0;
+	padding: 2em 0;
+}
+
+#sponsors a {
+	float: left;
+	width: 16%;
+	margin: 2%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	height: 80px;
+	background: transparent center center no-repeat;
+	background-size: contain;
+}
+
 #footer {
 	background: #303030;
 	color: #848484;
@@ -388,6 +406,11 @@ p {
 
 	.program-row .time {
 		width: 20%;
+	}
+
+	#sponsors a {
+		width: 40%;
+		margin: 5%;
 	}
 }
 
