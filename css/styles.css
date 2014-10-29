@@ -105,11 +105,11 @@ p {
 	font-size: 0.9em;
 }
 
-#navi a.navi-home-link {
-	font-family: nexa_rust_sansblack, sans-serif;
+#navi .navi-logo {
 	float: left;
 	margin-left: 0;
-	font-size: 1.1em;
+	height: 20px;
+	padding-top: 12px;
 }
 
 #header-image {
@@ -507,7 +507,7 @@ body.loaded #header h2 {
 		margin: 0 0.5em;
 	}
 
-	#navi .navi-home-link {
+	#navi .navi-logo {
 		display: none;
 	}
 
