@@ -337,6 +337,19 @@ p {
 	height: 80px;
 	background: transparent center center no-repeat;
 	background-size: contain;
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+#sponsors a:hover {
+	opacity: 0.5;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 #footer {
