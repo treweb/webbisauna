@@ -305,6 +305,12 @@ body.loaded #header h2 {
 #program h2 {
 	text-align: center;
 	color: #836f4e;
+	margin-bottom: 0;
+}
+
+#program .program-disclaimer {
+	color: #836f4e;
+	margin-top: 0;
 }
 
 #program p {
