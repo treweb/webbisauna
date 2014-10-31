@@ -517,6 +517,7 @@ body.loaded #header h2 {
 
 .modal-scroller {
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	height: 100%;
 }
 
