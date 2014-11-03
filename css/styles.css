@@ -563,6 +563,10 @@ body.loaded #header h2 {
 	font-family: encode_sans_widesemibold, sans-serif;
 }
 
+#ticket-form .modal-content {
+  padding-top: 5em;
+}
+
 @media (max-width: 800px) {
 	#subheader {
 		text-align: center;
