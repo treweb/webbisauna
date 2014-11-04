@@ -63,7 +63,7 @@ p {
 	margin-right: 0;
 }
 
-.ghost-button {
+#tickets button {
 	display: inline-block;
 	padding: 0.5em 1em 0.6em 1em;
 	border: 1px solid #fff;
@@ -81,7 +81,7 @@ p {
 	transition: all 0.2s;
 }
 
-.ghost-button:hover {
+#tickets button:hover {
 	background-color: #fff;
 	color: #333;
 	box-shadow: none;
@@ -561,10 +561,6 @@ body.loaded #header h2 {
 
 .modal h3 {
 	font-family: encode_sans_widesemibold, sans-serif;
-}
-
-#ticket-form .modal-content {
-  padding-top: 5em;
 }
 
 @media (max-width: 850px) {

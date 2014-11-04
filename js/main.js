@@ -47,30 +47,6 @@ $(function() {
 		showConduct();
 	}
 
-	var $ticketForm = $('#ticket-form')
-
-	var showTicketForm = function() {
-		$ticketForm.addClass('visible');
-		$body.addClass('modal-visible');
-		window.location.hash = 'ticket-form';
-	}
-
-	$('.show-ticket-form').click(function(e) {
-		e.preventDefault();
-		showTicketForm();
-		return false;
-	});
-
-	$ticketForm.find('.modal-overlay, .modal-close-icon').click(function() {
-		$ticketForm.removeClass('visible');
-		$body.removeClass('modal-visible');
-		removeHash();
-	})
-
-	if(window.location.hash == '#ticket-form') {
-		showTicketForm();
-	}
-
 	var headerImg = new Image();
 	$(headerImg).load(function() {
 		$body.addClass('loaded');
