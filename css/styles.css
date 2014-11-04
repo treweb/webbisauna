@@ -351,8 +351,9 @@ body.loaded #header h2 {
 	background: rgba(255,255,255,0.4);
 }
 
-#register-speaker h2 {
+#register-speaker .section-header {
 	margin-top: 0;
+	margin-bottom: 0.5em;
 }
 
 #register-speaker .topic {
@@ -614,6 +615,10 @@ body.loaded #header h2 {
 		padding-top: 0.5em;
 		width: 100%;
 	}
+
+	#register-speaker .program-row {
+		padding-top: 0.4em;
+	}
 }
 
 @media (max-width: 600px) {
@@ -659,5 +664,10 @@ body.loaded #header h2 {
 @media (max-width: 400px) {
 	#header {
 		font-size: 0.5em;
+	}
+
+	#tickets .prices {
+		display: block;
+		margin-bottom: 1em;
 	}
 }
