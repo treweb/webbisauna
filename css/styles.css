@@ -660,4 +660,8 @@ body.loaded #header h2 {
 	#header {
 		font-size: 0.5em;
 	}
+
+	#navi a {
+		font-size: 0.7em;
+	}
 }
