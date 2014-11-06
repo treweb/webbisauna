@@ -306,6 +306,7 @@ body.loaded #header h2 {
 	text-align: center;
 	color: #836f4e;
 	margin-bottom: 0;
+	line-height: 1em;
 }
 
 #program .program-disclaimer {
@@ -317,38 +318,47 @@ body.loaded #header h2 {
 	text-align: center;
 }
 
-.program-row {
+.program-row, .talk-row {
 	padding: 0.5em 2%;
 	margin-bottom: 4px;
 	background: #fff;
 	box-shadow: 0px 2px 0px rgba(0,0,0,0.25);
+	overflow: hidden;
 }
 
 .program-row .time {
-	display: inline-block;
+	display: block;
+	float: left;
 	width: 10%;
 	font-family: encode_sans_widesemibold, sans-serif;
 	color: #836f4e;
 	vertical-align: top;
 }
 
-.program-row .speaker {
-	display: inline-block;
-	color: #c64700;
-	width: 25%;
+.program-row .topic {
+	display: block;
+	float: left;
+	width: 90%;
 	vertical-align: top;
 }
 
-.program-row .topic {
-	display: inline-block;
-	width: 55%;
-	vertical-align: top;
+.talk-row .speaker {
+	display: block;
+	width: 25%;
+	float: left;
+	font-family: encode_sans_widesemibold, sans-serif;
+	color: #836f4e;
+}
+
+.talk-row .topic {
+	display: block;
 }
 
 #register-speaker {
 	padding: 1em;
-	margin-top: 1em;
+	margin-top: 2em;
 	background: rgba(255,255,255,0.4);
+	clear: both;
 }
 
 #register-speaker .section-header {
@@ -597,23 +607,29 @@ body.loaded #header h2 {
 		font-size: 1.4em;
 	}
 
-	.program-row {
+	.program-row, .talk-row {
 		padding: 1em;
 	}
 
 	.program-row .time {
 		width: auto;
-	}
-
-	.program-row .speaker {
-		width: auto;
-		margin-left: 0.5em;
+		float: none;
 	}
 
 	.program-row .topic {
 		display: block;
 		padding-top: 0.5em;
-		width: 100%;
+		width: auto;
+		float: none;
+	}
+
+	.talk-row .speaker, .talk-row .topic {
+		float: none;
+		width: auto;
+	}
+
+	.talk-row .topic {
+		padding-top: 0.5em;
 	}
 
 	#register-speaker .program-row {
