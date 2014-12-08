@@ -326,10 +326,11 @@ body.loaded #header h2 {
 	overflow: hidden;
 }
 
+.talk-row .time,
 .program-row .time {
 	display: block;
 	float: left;
-	width: 10%;
+	width: 8%;
 	font-family: encode_sans_widesemibold, sans-serif;
 	color: #836f4e;
 	vertical-align: top;
@@ -352,6 +353,7 @@ body.loaded #header h2 {
 
 .talk-row .topic {
 	display: block;
+	font-size: 85%;
 }
 
 #register-speaker {
