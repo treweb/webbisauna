@@ -637,6 +637,13 @@ body.loaded #header h2 {
 	#register-speaker .program-row {
 		padding-top: 0.4em;
 	}
+
+	.talk-row .time {
+		width: 80px;
+	}
+	.talk-row .topic {
+		font-size: 100%;
+	}
 }
 
 @media (max-width: 600px) {
