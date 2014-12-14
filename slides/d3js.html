@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>D3JS - @mrinnetmaki</title>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+<style>
+
+body {
+  font-size: 22px;
+}
+
+pre {
+  margin: 2em;
+  min-height: 90%;
+  padding: 1em !important;
+  border: 0px !important;
+}
+
+svg {
+  height: 100%;
+  padding: 2em;
+}
+
+circle {
+  fill: none;
+  fill-opacity: .2;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+div.links {
+  min-height: 90%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 2.1em;
+  right: 4em;
+}
+
+</style>
+</head>
+<body>
+<pre class="prettyprint lang-javascript">
+d3.select("body")
+  .append("p")
+    .text("Hello, world!");
+</pre>
+
+<pre class="prettyprint lang-javascript">
+d3.select("p")
+    .attr("class", "greeting");
+</pre>
+
+
+<pre class="prettyprint lang-javascript">
+d3.selectAll("p.greeting").remove();
+</pre>
+
+<pre class="prettyprint lang-javascript">
+d3.select("body")
+  .selectAll("p.greeting")
+    .data(["Hello, world! The data greets you."])
+    .enter()
+  .append("p")
+    .attr("class", "greeting")
+    .text(function(d) {return d;});
+</pre>
+
+<pre class="prettyprint lang-javascript">
+d3.select("body")
+  .selectAll("p.greeting")
+    .data([
+	  "Hello, world! Datum 1 greets you.",
+	  "Hello, world! Datum 2 greets you."
+	])
+    .enter()
+  .append("p")
+    .attr("class", "greeting")
+    .text(function(d) {return d;});
+</pre>
+
+<svg width="720" height="240"><g transform="translate(0,128)"><g transform="translate(300)"><circle r="110" style="fill: rgb(49, 130, 189);"></circle><text y="-120" dy=".35em" text-anchor="middle" style="font-weight: bold;">Data</text><text x="-50" dy=".35em" text-anchor="middle">Enter</text></g><text x="360" dy=".35em" text-anchor="middle">Update</text><g transform="translate(420)"><circle r="110" style="fill: rgb(230, 85, 13);"></circle><text y="-120" dy=".35em" text-anchor="middle" style="font-weight: bold;">Elements</text><text x="50" dy=".35em" text-anchor="middle">Exit</text></g></g></svg>
+
+<pre class="prettyprint lang-javascript">	
+var p = d3.select("body")
+  .selectAll("p.greeting")
+    .data(["Hello, world! Update pattern greets you."],
+      function(d) { return d; });
+
+p.enter()
+  .append("p")
+    .attr("class", "greeting");
+    	
+p.text(function(d) {return d;});
+
+p.exit().remove();
+</pre>
+
+<pre class="prettyprint lang-javascript">
+d3.selectAll("p.greeting")
+    .transition()
+	.style("color", "lightblue");
+</pre>
+
+<pre class="prettyprint lang-javascript">
+var p = d3.select("body")
+  .selectAll("p.greeting")
+    .data([
+	  "Hello, world! Transition 1 greets you.",
+	  "Hello, world! Transition 2 greets you.",
+	  "Hello, world! Transition 3 greets you.",
+	  "Hello, world! Transition 5 greets you.",
+	  "Hello, world! Transition 6 greets you."
+    ], function(d) {return d;});
+
+p.enter()
+  .append("p")
+    .attr("class", "greeting")
+	.style("color", "green");
+    	
+p.transition().duration(2000)
+    .style("color", "black")
+    .text(function(d) {return d;});
+
+p.exit()
+    .transition().duration(2000)
+	.style("color", "red")
+	.remove();
+
+</pre>
+
+<pre class="prettyprint lang-javascript">
+var p = d3.select("body")
+  .selectAll("p.greeting")
+    .data([
+	  "Hello, world! Transition 1 greets you.",
+	  "Hello, world! Transition 3 greets you.",
+	  "Hello, world! Transition 4 greets you.",
+	  "Hello, world! Transition 6 greets you.",
+	  "Hello, world! Transition 7 greets you."
+    ], function(d) {return d;});
+
+p.enter()
+  .append("p")
+    .attr("class", "greeting")
+	.style("color", "green");
+    	
+p.transition().duration(2000)
+    .style("color", "black")
+    .text(function(d) {return d;});
+
+p.exit()
+    .transition().duration(2000)
+	.style("color", "red")
+	.remove();
+
+</pre>
+
+<div class="links">
+
+<a href="http://bl.ocks.org/mbostock">http://bl.ocks.org/mbostock</a><br/>
+
+<a href="http://alignedleft.com/work/d3-book">http://alignedleft.com/work/d3-book</a><br/>
+
+<a href="https://twitter.com/mbostock">https://twitter.com/mbostock</a><br/>
+
+<a href="https://www.dashingd3js.com/">https://www.dashingd3js.com/</a>
+
+</div>
+
+<div class="footer">@mrinnetmaki</div>
+
+</body>
+
