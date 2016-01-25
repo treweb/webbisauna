@@ -616,6 +616,10 @@ body.loaded .header-section h2 {
 		font-size: 0.8em;
 	}
 
+	.header-section h1 {
+		font-size: 3.5em;
+	}
+
 	#subheader {
 		font-size: 1.4em;
 	}
