@@ -76,11 +76,11 @@ $(function() {
 	function updateMap() {
 		mapUrl = GMaps.staticMapURL({
 			size: [$map.width(), $map.height()],
-			lat: 61.4912933,
-			lng: 23.759547800000064,
+			lat: 61.486447,
+			lng: 23.7573273,
 			zoom: 13,
 			markers: [
-				{lat: 61.4862933, lng: 23.759547800000064}
+				{lat: 61.486447, lng: 23.7573273}
 			]
 		});
 		$mapImg.attr('src', mapUrl);
