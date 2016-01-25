@@ -358,10 +358,18 @@ body.loaded .header-section h2 {
 }
 
 #register-speaker {
-	padding: 1em;
 	margin-top: 2em;
-	background: rgba(255,255,255,0.4);
 	clear: both;
+}
+
+#register-speaker p {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+#register-speaker a:hover {
+	color: #fff;
 }
 
 #register-speaker .section-header {
