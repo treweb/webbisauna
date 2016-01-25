@@ -53,7 +53,7 @@ $(function() {
 	$(headerImg).load(function() {
 		$body.addClass('loaded');
 	});
-	headerImg.src = "img/header-bg.jpg";
+	headerImg.src = "img/header-bg-v2.jpg";
 
 	// Parallax scrolling
 	var $headerImage = $('#header-image');

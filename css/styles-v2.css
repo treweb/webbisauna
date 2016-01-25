@@ -130,7 +130,7 @@ p {
 	z-index: -1;
 	height: 120%;
 	width: 100%;
-	background: #000 url('../img/header-bg.jpg') no-repeat center center;
+	background: #000 url('../img/header-bg-v2.jpg') no-repeat center center;
 	background-size: cover;
 	opacity: 0;
 	-webkit-transition: opacity 1000ms ease-in-out;
