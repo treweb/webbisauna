@@ -51,7 +51,7 @@ p {
 	margin: 0 auto;
 	max-width: 940px;
 	padding: 0 20px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .column-half {
