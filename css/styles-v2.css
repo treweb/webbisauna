@@ -446,7 +446,7 @@ body.loaded .header-section h2 {
 	overflow: hidden;
 	display: inline-block;
 	vertical-align: middle;
-	height: 80px;
+	height: 60px;
 	background: transparent center center no-repeat;
 	background-size: contain;
 	opacity: 1;
@@ -466,7 +466,10 @@ body.loaded .header-section h2 {
 
 .sponsors-section a[href*="futurice"] { top: -3px; background-image: url('../img/sponsors/futurice.png'); }
 .sponsors-section a[href*="leonidas"] { background-image: url('../img/sponsors/leonidas.png'); }
+.sponsors-section a[href*="alma"] { width: 12%; background-image: url('../img/sponsors/alma.png'); }
+.sponsors-section a[href*="metosin"] { background-image: url('../img/sponsors/metosin.svg'); }
 .sponsors-section a[href*="vincit"] { background-image: url('../img/sponsors/vincit.png'); }
+
 .sponsors-section a[href*="alupark"] { top: 2px; background-image: url('../img/sponsors/alupark.png'); }
 .sponsors-section a[href*="bearmetal"] { background-image: url('../img/sponsors/bearmetal.png'); }
 
