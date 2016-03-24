@@ -306,7 +306,6 @@ body.loaded .header-section h2 {
 .program-section h2 {
 	text-align: center;
 	color: #1597b0;
-	margin-bottom: 0;
 	line-height: 1em;
 }
 
@@ -319,7 +318,7 @@ body.loaded .header-section h2 {
 	text-align: center;
 }
 
-.program-row, .talk-row {
+.program-row, .talk-wrapper {
 	padding: 0.5em 2%;
 	margin-bottom: 4px;
 	background: #fff;
@@ -327,11 +326,36 @@ body.loaded .header-section h2 {
 	overflow: hidden;
 }
 
+.talk-wrapper {
+	padding: 2em 5%;
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+.talk-wrapper h3 {
+	font-family: encode_sans_widelight, sans-serif;
+	margin: 0 0 0.5em 0;
+	font-size: 2em;
+}
+
+.talk-wrapper h4 {
+	font-family: encode_sans_widesemibold, sans-serif;
+	margin: 0;
+	color: #1597b0;
+}
+
+.talk-wrapper p {
+	line-height: 1.25em;
+	margin-bottom: 0;
+	margin-top: 0.5em;
+	text-align: left;
+}
+
 .talk-row .time,
 .program-row .time {
 	display: block;
 	float: left;
-	width: 8%;
+	width: 18%;
 	font-family: encode_sans_widesemibold, sans-serif;
 	color: #808080;
 	vertical-align: top;
@@ -340,7 +364,7 @@ body.loaded .header-section h2 {
 .program-row .topic {
 	display: block;
 	float: left;
-	width: 90%;
+	width: 80%;
 	vertical-align: top;
 }
 
